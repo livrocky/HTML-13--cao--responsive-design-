@@ -6,13 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive web design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <div class="logo-text">
+        <div href="#" class="cloud-img">
+            <img src="https://www.pngkit.com/png/full/346-3464773_share-this-image-flying-nimbus-transparent.png"
+                alt="logo">
+        </div>
+        <h1>Cloud Colours</h1>
+    </div>
+
     <div class="container main-grid ">
         <header class="block header">
-            <nav>
+            <nav class="header-nav">
                 <a class="nav-item" href="#">Home</a>
                 <a class="nav-item" href="#">Order</a>
                 <a class="nav-item" href="#">F.A.Q</a>
@@ -20,10 +34,19 @@
                 <a class="nav-item" href="#">Contacts</a>
             </nav>
         </header>
-        <aside class="block aside">%login%</aside>
-        <main class="block main">%content-title%</main>
-        <bottom class="block bottom">Help</bottom>
+        <div class="block aside">
+            <p> %login%</p>
+        </div>
+        <div class="block main">
+            <h2 class="subtitle">%content-title%</h2>
+            <p>%content-title</p>
+
+        </div>
+        <div class="block bottom">
+            <h2 class="subtitle">Help</h2>
+        </div>
     </div>
+    <div class="copyright"> © Cloud Colours. All rights reserved</div>
 </body>
 
 </html>

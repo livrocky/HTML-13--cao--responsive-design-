@@ -2,3 +2,97 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
 @import "reset.css";
 @import "common.css";
+
+html {
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div.logo-text {
+  display: flex;
+  align-items: center;
+}
+
+img {
+  width: 20%;
+}
+
+.block {
+  background-color: rgb(249, 244, 244);
+  padding: 40px;
+  border: 2px solid rgb(222, 217, 217);
+  border-radius: 0.2rem;
+}
+
+.main-grid {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 20% 1fr 1fr;
+  grid-template-areas:
+    "header header header"
+    "aside main main"
+    "bottom main main";
+}
+
+.header {
+  grid-area: header;
+}
+
+.aside {
+  grid-area: aside;
+}
+
+.main {
+  grid-area: main;
+}
+
+.bottom {
+  grid-area: bottom;
+}
+
+a {
+  padding-right: 20px;
+}
+
+.subtitle {
+  font-weight: unset;
+  font-size: xx-large;
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 10px;
+}
+
+@media only screen and (max-width: 425px) {
+  .main-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "header"
+      "aside"
+      "main"
+      "bottom";
+  }
+
+  img {
+    width: 70%;
+  }
+
+  .header-nav {
+    display: flex;
+    flex-direction: column;
+    font-size: xx-large;
+  }
+  a.nav-item {
+    padding-bottom: 60px;
+  }
+
+  p {
+    font-size: large;
+  }
+  h2 {
+    font-size: x-large;
+  }
+}
