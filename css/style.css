@@ -89,6 +89,7 @@ a {
   }
   a.nav-item {
     padding-bottom: 60px;
+    border-bottom: 1px solid grey;
   }
 
   p {
